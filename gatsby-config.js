@@ -30,7 +30,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-material-ui`,
     `gatsby-theme-material-ui`,
     `gatsby-plugin-web-font-loader`,
     `gatsby-plugin-netlify-cms`
