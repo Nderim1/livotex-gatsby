@@ -51,7 +51,7 @@ function HeroSection() {
   return (
     <div className={classes.heroContainer}>
       <h1 className={classes.title}>Travel More</h1>
-      <p className={classes.paragraph}>Plan your next trip today</p>
+      <p className={classes.paragraph}>Plan your next trip today and tomorrow</p>
       <br />
       <div className={classes.heroBtns}>
         <Button big primary>Get Started</Button>
