@@ -1,8 +1,7 @@
 backend:
-  name: test-repo
-  # repo: Nderim1/livotex-gatsby
-  # branch: main
-  # base_url: https://livotex.netlify.app/
+  name: github
+  repo: Nderim1/livotex-gatsby
+  branch: main
 
 # local_backend: true
 
