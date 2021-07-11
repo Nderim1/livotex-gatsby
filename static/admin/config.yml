@@ -9,8 +9,10 @@ media_folder: static/assets
 public_folder: /assets
 collections:
   - name: images
+    extension: json
     label: Images
     folder: content/images
+    file: content/images/index.json
     create: true
     fields:
       - { name: path, label: Path, widget: image }
@@ -18,15 +20,19 @@ collections:
       - { name: description, label: Description, widget: markdown }
   - name: about
     label: About
+    extension: json
     folder: content/about
-    create: true
+    file: content/about/index.json
+    create: false
     fields:
       - { name: title, label: Title, widget: string}
-      - { name: description, label: Description, widget: text}
+      - { name: description, label: Description, widget: markdown}
   - name: main
     label: Website title
+    extension: json
     folder: content/main
-    create: true
+    file: content/main/index.json
+    create: false
     fields:
       - { name: title, label: Title, widget: string}
       - { name: paragraph, label: Paragraph, widget: text}
