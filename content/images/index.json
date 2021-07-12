@@ -2,6 +2,16 @@
   "title": "index",
   "images": [
     {
+      "title": "Another one",
+      "description": "hellooo",
+      "image": "/assets/screenshot-from-2021-07-12-12-28-31.png"
+    },
+    {
+      "title": "Another image",
+      "image": "/assets/screenshot-from-2021-07-12-13-37-10.png",
+      "description": "annnn"
+    },
+    {
       "title": "Tshirt",
       "description": "This is an interesting tshirt",
       "image": "/assets/wallhaven-j5mz95.png"
