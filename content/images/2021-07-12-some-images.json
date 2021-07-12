@@ -1,0 +1,10 @@
+{
+  "title": "json images",
+  "images": [
+    {
+      "title": "This is a jsonimage",
+      "description": "this is a nice json image",
+      "image": "/assets/wallhaven-j5mz95.png"
+    }
+  ]
+}
