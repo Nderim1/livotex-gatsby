@@ -1,0 +1,15 @@
+{
+  "title": "index",
+  "images": [
+    {
+      "title": "Tshirt",
+      "description": "This is an interesting tshirt",
+      "image": "/assets/wallhaven-j5mz95.png"
+    },
+    {
+      "title": "Second tshirt",
+      "description": "This is a second t shirt and is also very nice",
+      "image": "/assets/screenshot-from-2021-07-09-15-17-30.png"
+    }
+  ]
+}
