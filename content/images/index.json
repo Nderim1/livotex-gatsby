@@ -2,24 +2,39 @@
   "title": "index",
   "images": [
     {
-      "title": "Another one",
-      "description": "hellooo",
-      "image": "/assets/screenshot-from-2021-07-12-12-28-31.png"
+      "image": "/assets/anomaly-wwesmhegxds-unsplash.jpg",
+      "title": "Anomaly blank",
+      "description": "This is the anomaly blank t shirt"
     },
     {
-      "title": "Another image",
-      "image": "/assets/screenshot-from-2021-07-12-13-37-10.png",
-      "description": "annnn"
+      "image": "/assets/brooke-cagle-d1w3rqganhi-unsplash.jpg",
+      "title": "Brooke tshirt",
+      "description": "This is the tshirt from brooke"
     },
     {
-      "title": "Tshirt",
+      "image": "/assets/ryan-hoffman-6nub980bi3i-unsplash.jpg",
+      "title": "Blank ryan hofman",
+      "description": "the black version from ryan hofman"
+    },
+    {
+      "title": "Goofy shirt",
+      "description": "This is an interesting tshirt from ryan hofman",
+      "image": "/assets/kukuvaja-feinkost-o7e4sidrkh8-unsplash.jpg"
+    },
+    {
+      "title": "Outcast Tshirt",
+      "image": "/assets/taylor-xw4cbp9lobm-unsplash.jpg",
+      "description": "This the parillon tshirt"
+    },
+    {
+      "title": "Ryan Hofman",
       "description": "This is an interesting tshirt",
-      "image": "/assets/wallhaven-j5mz95.png"
+      "image": "/assets/ryan-hoffman-u6n1hrw0sdq-unsplash.jpg"
     },
     {
-      "title": "Second tshirt",
+      "title": "Parillon",
       "description": "This is a second t shirt and is also very nice",
-      "image": "/assets/screenshot-from-2021-07-09-15-17-30.png"
+      "image": "/assets/geoffroy-danest-0fg6zacwgjy-unsplash.jpg"
     }
   ]
 }
