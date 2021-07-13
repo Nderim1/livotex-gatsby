@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { makeStyles } from '@material-ui/styles'
-import marked from 'marked'
 import OceanImage from '../../images/ocean.jpg'
 import Button from '../Button'
 import TitleContent from '../../../content/main'
@@ -50,16 +49,11 @@ const useStyles = makeStyles(theme => ({
 
 function HeroSection() {
   const classes = useStyles()
-  useEffect(() => {
-    // import('../../../content/main/livotex.md')
-    //   .then((text) => {
-    //     console.log(text)
-    //   })
-  }, [])
+  
   return (
     <div className={classes.heroContainer}>
-      <h1 className={classes.title}></h1>
-      <p className={classes.paragraph}></p>
+      <h1 className={classes.title}>{TitleContent.title}</h1>
+      <p className={classes.paragraph}>{TitleContent.paragraph}</p>
       <br />
       <div className={classes.heroBtns}>
         <Button big primary>Get Started</Button>
