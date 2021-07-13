@@ -64,7 +64,7 @@ const Footer = () => {
       <section className={classes.socialMedia}>
 
         <div className={classes.socialMediaWrap}>
-          <Link className={classes.socialLogo}>
+          <Link to='/' className={classes.socialLogo}>
             <DiErlang className={classes.socialIcon} />
             Explor
           </Link>

@@ -6,7 +6,7 @@ import TitleContent from '../../../content/main'
 
 const useStyles = makeStyles(theme => ({
   heroContainer: {
-    background: `url(${OceanImage})`,
+    background: `url(${OceanImage}), linear-gradient(#eb01a5, #d13531);`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',

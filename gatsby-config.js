@@ -32,7 +32,16 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-theme-material-ui`,
     `gatsby-plugin-web-font-loader`,
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-headers`,
+      options: {
+        headers: {
+          '/static/*': ['cache-control: static, max-age=31536000, immutable'],
+          '/public/*': ['cache-control: public, max-age=31536000, immutable']
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

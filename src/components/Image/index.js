@@ -1,6 +1,4 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { makeStyles } from '@material-ui/styles'
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -71,13 +69,17 @@ const useStyles = makeStyles(theme => ({
   imageDescription: {
     marginTop: '12px',
     fontSize: '16px'
+  },
+  cardRoot: {
+    background: 'linear-gradient(#eb01a5, #d13531);'
   }
 }))
 
 const Image = () => {
   const classes = useStyles()
   const [images, setImages] = React.useState([])
-  const [openImageModal, setOpenImageModal] = React.useState('')
+  const [openImageModal, setOpenImageModal] = React.useState(false)
+  const [imageToOpen, setImageToOpen] = React.useState({})
   React.useEffect(() => {
     async function loadImages() {
       const data = await import('../../../content/images')
@@ -88,19 +90,20 @@ const Image = () => {
   }, [])
 
   const onImageClick = (image) => {
-    console.log('open now')
-    setOpenImageModal(image)
+    setOpenImageModal(!openImageModal)
+    setImageToOpen(image || {})
   }
+
   return (
     <div className={classes.imageContainer}>
       <h1>Our T-Shirts</h1>
       <div className={classes.imageGrid}>
         {images.map((imageEl, key) => {
           return (<>
-          <Card className={classes.root}>
+          <Card className={classes.cardRoot}>
           {/* <Img src={imageEl.image} /> */}
-          <h1>picka</h1>
                   <CardMedia
+                  key={imageEl.title}
                 className={classes.imageItem}
                 image={imageEl.image}
                 title={imageEl.title}
@@ -130,9 +133,9 @@ const Image = () => {
       >
         <Fade in={openImageModal}>
           <div className={classes.paper}>
-            <h2 className={classes.imageTitle}>{openImageModal.title}</h2>
-            <img className={classes.openedImage} src={openImageModal.image} alt="" />
-            <div className={classes.imageDescription}>{openImageModal.description}</div>
+            <h2 className={classes.imageTitle}>{imageToOpen.title}</h2>
+            <img className={classes.openedImage} src={imageToOpen.image} alt="" />
+            <div className={classes.imageDescription}>{imageToOpen.description}</div>
           </div>
         </Fade>
       </Modal>
