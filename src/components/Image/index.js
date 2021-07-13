@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/styles'
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade'
+import Card from '@material-ui/core/Card'
+import CardMedia from '@material-ui/core/CardMedia'
 
 const useStyles = makeStyles(theme => ({
   imageContainer: {
@@ -56,8 +58,11 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2, 4, 3),
   },
   openedImage: {
-    maxWidth: '500px',
-    maxHeight: '700px'
+    maxWidth: '600px',
+    maxHeight: '800px',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '300px'
+    }
   },
   imageTitle: {
     textAlign: 'center',
@@ -92,12 +97,22 @@ const Image = () => {
       <div className={classes.imageGrid}>
         {images.map((imageEl, key) => {
           return (<>
-            <div className={classes.imageItem} style={{
+          <Card className={classes.root}>
+          {/* <Img src={imageEl.image} /> */}
+          <h1>picka</h1>
+                  <CardMedia
+                className={classes.imageItem}
+                image={imageEl.image}
+                title={imageEl.title}
+                onClick={() => onImageClick(imageEl)}  
+              />
+              </Card>
+            {/* <div className={classes.imageItem} style={{
               backgroundImage: `url("${imageEl.image}")`
             }}
               alt={imageEl.title} 
-              onClick={() => onImageClick(imageEl)}  
-            />
+              
+            /> */}
           </>)
         })}
       </div>
